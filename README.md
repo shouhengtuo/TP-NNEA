@@ -46,44 +46,11 @@
 
 ### 主算法
 - `TP_NNEA.m` - 原始算法实现（二进制文件，无法直接查看）
-- `DyN-MOEA/DyN_MOEA.m` - 增强版本，具有自适应特性
 
-### 神经网络组件
-- `DyN-MOEA/FCNForward.m` - 神经网络前向传播
-- `DyN-MOEA/INDIVIDUAL.m` - 个体表示和目标计算
 
-### 进化算子
-- `DyN-MOEA/Operator_DynDE.m` - 动态差分进化，包含4种策略
-- `DyN-MOEA/guidedFlipByConcept.m` - 概念引导变异
-- `DyN-MOEA/DiversityMutation.m` - 多样性增强变异
-- `DyN-MOEA/entropyFlipOne.m` - 熵驱动变异
 
-### 选择和档案管理
-- `DyN-MOEA/EnvironmentalSelection_DynMOEA.m` - 具有多样性保持的环境选择
-- `DyN-MOEA/ArchiveManager.m` - 精英档案管理
-- `DyN-MOEA/TournamentSelection.m` - 二进制锦标赛选择
-- `DyN-MOEA/NDSort.m` - 非支配排序
 
-### 实用函数
-- `DyN-MOEA/CalFitness1.m` - 适应度计算
-- `DyN-MOEA/repairC1_num.m` - 约束修复
-- `DyN-MOEA/seedArchiveFromFront.m` - 档案初始化
-- `DyN-MOEA/updateArchive.m` - 档案更新
-- `DyN-MOEA/extractPopulationData.m` - 数据提取
-- `DyN-MOEA/positionEntropy.m` - 位置熵计算
-- `DyN-MOEA/iif.m` - 内联if函数
 
----
-
-## 📊 问题定义文件
-
-### 习题推荐问题
-- `DyN-MOEA/Exerciese Recommendation/ER.m` - 增强问题公式化
-- `DyN-MOEA/Exerciese Recommendation/Exercise_RC.m` - 替代公式化
-
-### 数据集
-- `DyN-MOEA/Exerciese Recommendation/dataSet1.mat` - ASSISTments数据集
-- `DyN-MOEA/Exerciese Recommendation/dataSet2.mat` - JunYi数据集
 
 ---
 
@@ -182,29 +149,7 @@ DyN_MOEA(Global);
 - **ASSISTments**: 4,163名学生，17,746道习题，123个概念
 - **JunYi**: 1,000名学生，712道习题，39个概念
 
-### 性能比较
-| 算法 | 皮尔逊 | 斯皮尔曼 | 肯德尔 | HV |
-|-----------|----------|----------|---------|----|
-| CMOEA/D  | -0.280  | -0.243   | -0.185  | 0.544 |
-| NSGA-II   | -0.163  | -0.117   | -0.082  | 0.545 |
-| CCMO      | -0.123  | -0.106   | -0.072  | 0.538 |
-| SparseEA2 | -0.412  | -0.359   | -0.265  | 0.539 |
-| CoE-DCDP  | -0.101  | -0.028   | -0.015  | 0.519 |
-| **TP-NNEA** | **-0.391** | **-0.181** | **-0.594** | **0.554** |
 
----
-
-## 💻 系统要求
-
-### 软件
-- MATLAB R2019b或更高版本
-- 优化工具箱
-- 统计和机器学习工具箱（可选）
-
-### 硬件
-- **最低配置**: 4GB内存，双核CPU
-- **推荐配置**: 8GB+内存，四核+CPU
-- **大型数据集**: 建议GPU加速
 
 ---
 
@@ -217,64 +162,10 @@ If you use this algorithm in your research, please cite:
   title={Integrating Cognitive Diagnosis and Multi-Objective Optimization for Personalized Exercise Recommendation: A Two-Stage Approach Based on Neural Network Dimensionality Reduction},
   author={Tuo, Shouheng and Zhao, Yong},
   journal={Computer Education},
-  year={2024},
+  year={2025},
   note={Under Review}
 }
 ```
 
----
 
-## 📄 许可证
 
-此代码仅用于研究目的。使用此平台的所有出版物应确认使用TP-NNEA并参考原始论文。
-
----
-
-## 📧 联系方式
-
-有关算法或实现的问题，请参考原始论文或联系作者。
-
----
-
-## 📁 测试和分析工具
-
-### 快速测试（无需数据集）
-```matlab
-% 运行快速性能测试（使用模拟数据）
->> QuickPerformanceTest
-```
-
-**输出**:
-- 控制台性能指标显示
-- `Quick_Performance_Test.png` - 可视化
-
-### 完整评估（需要数据集）
-```matlab
-% 运行完整性能评估
->> AlgorithmPerformanceTest
-```
-
-**输出**:
-- 控制台统计摘要
-- `TP_NNEA_Performance_Analysis.png` - 综合可视化
-- `TP_NNEA_Results.csv` - 每个学生的详细指标
-- `TP_NNEA_Summary.mat` - 聚合统计
-
-### 详细分析报告
-```matlab
-% 显示综合算法分析
->> DetailedAnalysisReport
-```
-
-**输出**:
-- 涵盖以下内容的详细控制台报告：
-  - 算法架构
-  - 优势和局限性
-  - 性能基准
-  - 建议
-
----
-
-**Last Updated**: 2024-12-14
-**Algorithm Version**: TP-NNEA v1.0
-**Status**: Under Review at Computer Education Journal
