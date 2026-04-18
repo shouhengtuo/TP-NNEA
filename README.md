@@ -2,7 +2,7 @@
 
 ## 📚 Algorithm Overview
 
-**TP-NNEA (Two-Phase Neural Network Evolution Algorithm)** is a novel personalized exercise recommendation method that combines neural network dimensionality reduction with multi-objective optimization techniques. This algorithm has been submitted to the journal *Computer Education* and is currently under review.
+**TP-NNEA (Two-Phase Neural Network Evolution Algorithm)** is a novel personalized exercise recommendation method that combines neural network dimensionality reduction with multi-objective optimization techniques. This algorithm has been submitted to the journal *applied soft computing* and is currently under review.
 
 **Authors**: Shouheng Tuo, Yong Zhao
 **Paper Title**: Integrating Cognitive Diagnosis and Multi-Objective Optimization for Personalized Exercise Recommendation: A Two-Stage Approach Based on Neural Network Dimensionality Reduction
