@@ -6,7 +6,7 @@
 
 **Authors**: Shouheng Tuo, Yong Zhao
 **Paper Title**: Integrating Cognitive Diagnosis and Multi-Objective Optimization for Personalized Exercise Recommendation: A Two-Stage Approach Based on Neural Network Dimensionality Reduction
-**Journal**: Computer Education (Under Review)
+
 
 ---
 
